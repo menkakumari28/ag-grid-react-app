@@ -13,3 +13,53 @@
 .--ag-control-panel-background-color{
     background-color: transparent;
 }
+
+div > a {
+    display: none;
+}
+.bg{
+    padding: 1rem;
+    background-color: #fff;
+    width: 20vw;
+    height: auto;
+    border-left: 1px solid #80808029;
+    max-height: 200px;
+    overflow: auto;
+}
+.bg h1{
+    font-size: 1rem;
+    color: #000;
+    line-height: normal;
+    margin: 1rem 0;
+}
+.bg img{
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+    cursor: pointer;
+    border: 1.5px solid #d3d3d3a3;
+    border-radius: 6px;
+}
+.bg img:hover{
+    border:2px solid #646cffa3;
+}
+.edit-chart {
+    margin: 10px 0px !important;
+    /* justify-content: end; */
+    width: 98%;
+}
+.ant-tabs-tab{
+    border: none;
+    background-color: transparent;
+}
+.chart-box{
+    max-width: 540px;
+    min-width: 540px;
+    justify-content: center;
+    display: flex;
+
+}
+.ant-modal-content{
+    min-height: 470px;
+    max-height: 470px;
+}
