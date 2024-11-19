@@ -1,0 +1,27 @@
+.ant-table-thead th{
+    background-color: rgb(228, 237, 250) !important ;
+}
+.ant-table-cell::before{
+    width: 2px !important;
+    background-color: #646cff24  !important;
+}
+
+.wj-flexgrid {
+    height: 300px;
+  }
+  
+  .wj-flexgrid .wj-cell.wj-frozen {
+    background: #FFFBDD;
+  }
+  
+  .ctx-menu {
+    padding: 3px;
+    min-width: 120px;
+    background: rgb(221, 250, 255);
+    overflow: hidden;
+  }
+  
+  .ctx-menu .wj-listbox-item {
+    margin: 6px;
+  }
+  

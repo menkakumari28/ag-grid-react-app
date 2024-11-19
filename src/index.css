@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,8 +28,27 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
-
+.wj-content{
+  border: none !important;
+}
+.ant-dropdown-trigger {
+  width: 85%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wj-cell{
+  text-align: center !important;
+}
+/* .wj-header-alt{
+  display: none !important;
+} */
+ .wj-cell{
+  border: 1px solid rgba(0, 0, 0, .2);
+ }
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
