@@ -18,7 +18,7 @@ export const columns = [
   { title: `Number`, dataIndex: `number` },
 ];
 
-export const dataMap = [
+const dataMap = [
   {
     name: `John Brown`,
     age: 32,
@@ -41,7 +41,7 @@ export const dataMap = [
   },
   {
     name: `Joe Black`,
-    age: 32,
+    age: 22,
     address: `Sidney No. 1 Lake Park`,
     city: `London`,
     state: `London`,
@@ -51,7 +51,7 @@ export const dataMap = [
   },
   {
     name: `Jim Red`,
-    age: 32,
+    age: 43,
     address: `London No. 2 Lake Park`,
     city: `London`,
     state: `London`,
@@ -60,8 +60,8 @@ export const dataMap = [
     number: `8765432144`,
   },
   {
-    name: `Jim Red`,
-    age: 32,
+    name: `Jim Yellow`,
+    age: 65,
     address: `London No. 2 Lake Park`,
     city: `London`,
     state: `London`,
@@ -70,32 +70,33 @@ export const dataMap = [
     number: `8765432144`,
   },
   {
-    name: `Jim Red`,
-    age: 32,
+    name: `Jim Purple`,
+    age: 31,
     address: `London No. 2 Lake Park`,
     city: `London`,
     state: `London`,
     street: 2,
-    pin: 1234,
-    number: 8765432144,
+    pin: `1234`,
+    number: `8765432144`,
   },
 ];
-function getData() {
-  let data = [];
-  let countries = "Austria,Belgium,Chile,Denmark,Finland,Japan,UK".split(",");
-  for (let i = 0; i < 300; i++) {
-    data.push({
-      id: i,
-      from: countries[i % countries.length],
-      to: countries[(i + 1) % countries.length],
-      sales: Math.random() * 10000,
-      expenses: Math.random() * 5000,
-      amount: Math.random() * 10000,
-      extra: Math.random() * 10000,
-    });
-  }
-  return data;
-}
+
+// function getData() {
+//   let data = [];
+//   let countries = "Austria,Belgium,Chile,Denmark,Finland,Japan,UK".split(",");
+//   for (let i = 0; i < 300; i++) {
+//     data.push({
+//       id: i,
+//       from: countries[i % countries.length],
+//       to: countries[(i + 1) % countries.length],
+//       sales: Math.random() * 10000,
+//       expenses: Math.random() * 5000,
+//       amount: Math.random() * 10000,
+//       extra: Math.random() * 10000,
+//     });
+//   }
+//   return data;
+// }
 export const data = dataMap;
 
 export const items = [
