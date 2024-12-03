@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import GraphOne from "../assets/images/graph1.png";
 import GraphTwo from "../assets/images/graph2.png";
 import GraphThree from "../assets/images/graph3.png";
@@ -7,9 +7,10 @@ import GraphFive from "../assets/images/graph5.png";
 import AreaChart from "../assets/images/area1.png";
 import AreaChartTwo from "../assets/images/area2.png";
 import LineChart from "../assets/images/line.png";
-const EditChart = ({ setComponent }) => {
+import { AgTableContext } from "../context/AgTableContext";
+const EditChart = () => {
+  const { setComponent } = useContext(AgTableContext);
   const handleClick = (chartName) => {
-    console.log("called");
     setComponent(chartName);
   };
 
