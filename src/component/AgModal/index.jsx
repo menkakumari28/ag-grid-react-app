@@ -63,17 +63,15 @@ const AgModal = ({
           maxWidth: "70vw",
         }}
       >
-        {!isEditing && (
-          <div style={{ display: "flex", justifyContent: "end" }}>
-            <Dropdown
-              className="edit-chart"
-              menu={{ items, onClick: () => setIsEditing(true) }}
-              trigger={["click"]}
-            >
-              <Button type="text" icon={<MoreOutlined />} />
-            </Dropdown>
-          </div>
-        )}
+        <div style={{ display: "flex", justifyContent: "end" }}>
+          <Dropdown
+            className="edit-chart"
+            menu={{ items, onClick: () => setIsEditing(true) }}
+            trigger={["click"]}
+          >
+            <Button type="text" icon={<MoreOutlined />} />
+          </Dropdown>
+        </div>
         <div style={{ display: "flex" }}>
           {component && getComponent(component, {})}
           {isEditing && (
@@ -85,7 +83,7 @@ const AgModal = ({
                       <CloseOutlined />
                     </span>
                   }
-                  // key={"0"}
+                // key={"0"}
                 />
                 <Tabs.TabPane tab="Chart" key={"1"}>
                   <div>

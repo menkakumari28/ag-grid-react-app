@@ -12,14 +12,6 @@ import {
 } from "recharts";
 import { AgTableContext } from "../../context/AgTableContext";
 
-// const data = [
-//   { name: "John Brown", age: 32 },
-//   { name: "Jim Green", age: 42 },
-//   { name: "Joe Black", age: 32 },
-//   { name: "Jim Red", age: 32 },
-//   { name: "Jim Red", age: 32 },
-// ];
-
 const StackedBarChart = () => {
   const { selectedData } = useContext(AgTableContext);
   return (

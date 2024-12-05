@@ -1,12 +1,13 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useContext, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
+import { AgTableContext } from "../../context/AgTableContext";
 
-const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 }
-];
+// const data = [
+//   { name: "Group A", value: 400 },
+//   { name: "Group B", value: 300 },
+//   { name: "Group C", value: 300 },
+//   { name: "Group D", value: 200 }
+// ];
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -67,7 +68,7 @@ const renderActiveShape = (props) => {
         y={ey}
         textAnchor={textAnchor}
         fill="#333"
-      >{`PV ${value}`}</text>
+      >{`Age ${value}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
@@ -82,6 +83,7 @@ const renderActiveShape = (props) => {
 };
 
 const CustomPieChart = () => {
+  const { selectedData: data } = useContext(AgTableContext);
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
@@ -101,7 +103,7 @@ const CustomPieChart = () => {
         innerRadius={60}
         outerRadius={80}
         fill="#8884d8"
-        dataKey="value"
+        dataKey="age"
         onMouseEnter={onPieEnter}
       />
     </PieChart>
